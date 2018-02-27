@@ -11,6 +11,7 @@
 const React = require('react');
 const Browser = require('./Browser.react.js');
 const RuleList = require('./RuleList.react.js');
+const TransformationSettings = require('./TransformationSettings.react.js');
 const EditorActions = require('../data/EditorActions');
 
 import type { Props } from '../containers/AppContainer.react';
@@ -75,6 +76,7 @@ class App extends React.Component<Props> {
           </main>
           <nav id="nav">
             <RuleList {...this.props} />
+            <TransformationSettings {...this.props} />
           </nav>
         </div>
         <UpdateNotice {...this.props} />

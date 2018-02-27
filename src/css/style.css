@@ -65,6 +65,7 @@ h1 {
   padding-right: 10px;
   overflow-y: auto;
   display: flex;
+  flex-direction: column;
 }
 
 .loader {
@@ -427,7 +428,8 @@ webview {
   color: #ccc !important;
 }
 
-.selectors-form {
+.selectors-form,
+.settings-fields {
   margin-bottom: 10px;
   position: relative;
   background: rgba(255, 255, 255, 0.6);
@@ -443,7 +445,8 @@ webview {
 }
 .selectors-form .field,
 .selectors-form .attributes,
-.selector-label {
+.selector-label,
+.settings-fields .field {
   padding: 0 5px !important;
 }
 
@@ -594,6 +597,11 @@ button {
 .rule-list {
   display: flex;
   flex-direction: column;
+  flex-grow: 1;
+  width: 300px;
+}
+
+.settings {
   width: 300px;
 }
 
